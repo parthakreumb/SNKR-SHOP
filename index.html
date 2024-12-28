@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNKR Shop</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            background-color: #fdf5e6; /* Warm beige for a clean look */
+            font-family: fantasy; /* Modern font */
+            color: #333; /* Neutral dark text */
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            max-width: 80px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ff4500; /* Vibrant orange */
+            font-weight: 600;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff4500;
+            color: #fff;
+            border-color: #ff4500;
+        }
+
+        /* Main Section Styling */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 80px;
+        }
+
+        .content-left h2 {
+            font-size: 3rem;
+            color: #ff4500;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .content-mid p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: #444;
+        }
+
+        .content-right img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Button Styling */
+        .btn {
+            padding: 15px 30px;
+            margin: 15px 30px 30px;
+            background-color: #ff4500;
+            color: #fff;
+            font-family: fantasy;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            main {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .content-mid {
+                text-align: center;
+            }
+
+            .content-right img {
+                max-width: 80%;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 5px 10px;
+            }
+
+            .btn {
+                padding: 12px 25px 30px 30px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="SNKR.png" alt="SNKR Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Buy Now</a></li>
+                <li><a href="#">Sell Now</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#" class="signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content-left">
+            <h2>Jordan 1's</h2>
+        </div>
+        <div class="content-mid">
+            <p>
+                The first shoe to ever be worn in the NBA with multiple colorways, the OG black and red was originally banned for violating the league’s uniform policy, and was threatened with a $5,000 fine every game it was worn. <br><br>
+                The OG’s legacy lives on through the Air Jordan 1 Retro, honoring a legend that expanded the game’s creative potential and redefined basketball’s connection to style and culture.
+            </p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="content-right">
+            <img src="J1.png" alt="Jordan 1 Sneakers">
+        </div>
+    </main>
+    <footer>
+        © 2024 SNKR Shop. All rights reserved.
+    </footer>
+</body>
+</html>
